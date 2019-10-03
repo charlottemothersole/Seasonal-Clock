@@ -1,0 +1,45 @@
+body {
+    background-color:palegreen;    
+    background-size:100vw 100vh;
+    background-repeat:no-repeat;
+    height:100vh;
+    margin:0;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.clock {
+    border:white 20px solid;
+    background:blanchedalmond;
+    border-radius:50%;
+    height:50vh;
+    width:25vw;
+    margin:0;
+    position:relative;
+}
+
+.hand {
+    background:black;    
+    position:absolute;
+    bottom:50%;
+    right:50%;
+    transform:rotate(90deg);
+    transform-origin:right;
+    transition:0.5s;
+}
+
+.hour-hand {
+    height:0.4vh;
+    width:8vw;
+}
+
+.min-hand {
+    height:0.4vh;
+    width:11vw;
+}
+
+.sec-hand {
+    height:0.25vh;
+    width:11vw;
+}
